@@ -1,0 +1,22 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+
+# Test/cache artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local/non-essential workspace files
+conversación previa sample2llm *.md
+README repomix.md
+README_OLD.md
+
+# Commercial/private sample subset (not required to run project)
+Muestra reducida de samples/

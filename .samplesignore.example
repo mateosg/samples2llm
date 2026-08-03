@@ -1,0 +1,5 @@
+# Same format as .gitignore. Rename this file to .samplesignore in your
+# sample folder to exclude specific subfolders from analysis.
+Demos/
+Raw_Unprocessed/
+*_backup.wav

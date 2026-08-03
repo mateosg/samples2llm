@@ -1,0 +1,15 @@
+{
+  "input": {
+    "extensions": [".wav", ".aiff", ".aif", ".flac", ".mp3"],
+    "max_file_size_mb": 200
+  },
+  "output": {
+    "style": "json",
+    "include_embeddings": false
+  },
+  "extraction": {
+    "enable_tonal": true,
+    "enable_rhythmic": true,
+    "enable_embeddings": false
+  }
+}

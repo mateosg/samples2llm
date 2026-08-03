@@ -1,0 +1,26 @@
+[project]
+name = "samples2llm"
+version = "0.1.0"
+description = "Convert an audio sample folder into LLM-friendly JSON/Markdown, capturing both contextual metadata (path/name) and measured physical signal characteristics."
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0",
+    "soundfile>=0.12",
+    "librosa>=0.10",
+    "numpy>=1.24",
+    "typer>=0.12",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-cov"]
+
+[project.scripts]
+samples2llm = "samples2llm.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/samples2llm"]
