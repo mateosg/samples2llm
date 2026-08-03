@@ -20,3 +20,6 @@ README_OLD.md
 
 # Commercial/private sample subset (not required to run project)
 Muestra reducida de samples/
+
+# Local export artifacts
+*.zip
