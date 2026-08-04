@@ -43,15 +43,6 @@ The bottleneck in production usually isn't *finding* samples — it's finding th
 
 `samples2llm` turns a sample folder into a single file you can hand to an LLM and simply ask which sample fits — and get an answer grounded in what the audio actually measures, not a guess based on filenames. Instead of auditioning a whole `Risers/` folder, you describe what you need and get candidates back.
 
-For that to be trustworthy, each sample is described from two angles, kept clearly separate:
-
-| Field | Source | Reliability |
-|---|---|---|
-| `declared` | Parsed from filename / folder path | Human-entered, can be wrong |
-| `measured` | Extracted from the actual audio signal | Computed, physically grounded |
-
-When the two disagree — e.g. a filename says `128bpm` but the detected tempo is `132bpm` — a **confidence flag** is raised, so the LLM (or you) knows to trust the measurement over the label.
-
 ## ✨ Features
 
 - 📄 **JSON and Markdown output** — pick whichever fits your pipeline
